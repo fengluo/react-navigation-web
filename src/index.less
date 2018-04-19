@@ -1,0 +1,64 @@
+html, body {
+  height: 100%;
+}
+body {
+  overflow: auto!important;
+  -webkit-overflow-scrolling: touch;
+}
+#example, .container {
+  height: 100%;
+}
+.container {
+  position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+  overflow: scroll;
+}
+.fixed-bottom {
+  position: fixed; bottom: 0; left: 0;
+  width: 100%; height: 70px;
+  background-color: #ddd;
+}
+hr {
+  margin: 70px 10px;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.muted-text{
+  color: #BBB;
+}
+
+// fix style
+.am-modal-content {
+  height: auto;
+  min-height: 100%;
+}
+// .am-popup-mask, .am-popup-wrap, .am-popup {
+//   position: absolute;
+// }
+.am-refresh-control-pull, .am-refresh-control-release {
+  justify-content: flex-start;
+}
+
+.am-grid .am-flexbox .am-flexbox-item .am-grid-item-content .am-grid-item-inner-content img.am-grid-icon{
+  width: auto;
+  height: auto;
+}
+
+.row {
+  padding: 0 0.3rem;
+  background-color: white;
+}
+.row-title {
+  height: 1rem;
+  line-height: 1rem;
+  color: #888;
+  font-size: 0.36rem;
+  border-bottom: 1px solid #F6F6F6;
+}
+.row-text {
+  display: inline-block;
+  font-size: 0.32rem;
+  line-height: 1;
+}

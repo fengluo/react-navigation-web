@@ -1,0 +1,16 @@
+{
+  "presets": [
+    [
+      "babel-preset-es2015",
+      {
+        "modules": false
+      }
+    ],
+    "stage-2",
+    "babel-preset-react"
+  ],
+  "plugins": [
+    "transform-decorators-legacy",
+    ["import", { "libraryName": "antd", "style": "css" }]
+  ]
+}
