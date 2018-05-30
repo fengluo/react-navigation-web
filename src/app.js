@@ -12,20 +12,23 @@ const HomeTab = StackNavigator(
   {
     Home: {
       screen: Home,
-      path: ""
+      path: "",
+      navigationOptions: {
+        title: "Welcome"
+      }
     },
     CruiseDetail: {
       screen: CruiseDetail,
       path: "cruises/:cruiseId"
     }
+  },
+  {
+    initialRouteName: "Home"
+    // tabBarOptions: {
+    //   inactiveTintColor: '#108ee9',
+    //   activeTintColor: '#888',
+    // },
   }
-  // {
-  //   initialRouteName: 'Home',
-  //   // tabBarOptions: {
-  //   //   inactiveTintColor: '#108ee9',
-  //   //   activeTintColor: '#888',
-  //   // },
-  // }
 );
 
 const AppNavigator = TabNavigator(
